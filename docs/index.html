@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta</title>
+    <!-- Enlace al archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal de la aplicación de punto de venta -->
+    <div class="container">
+        <!-- Título principal de la tienda -->
+        <h1>FogoShop</h1>
+
+        <!-- Campo de búsqueda de productos -->
+        <input type="text" id="search" placeholder="Buscar producto..." oninput="searchProduct()" />
+        
+        <!-- Lista de productos que se generará dinámicamente con JavaScript -->
+        <div id="product-list" class="product-list">
+            <!-- Productos se generarán dinámicamente aquí -->
+        </div>
+
+        <!-- Sección del carrito de compras -->
+        <h2>FogoCarrito</h2>
+
+        <!-- Tabla que muestra los productos añadidos al carrito -->
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <!-- Columnas para mostrar la imagen, nombre, precio, cantidad y total de cada producto en el carrito, además de una opción para eliminar -->
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo de la tabla donde se agregan los productos al carrito -->
+            <tbody id="cart-body">
+                <!-- Los productos seleccionados se añadirán aquí dinámicamente con JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Muestra el total general de los productos en el carrito -->
+        <h3>Total a FogoPagar: $<span id="grand-total">0.00</span></h3>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo que maneja la funcionalidad del punto de venta -->
+    <script src="script.js"></script>
+</body>
+</html>
